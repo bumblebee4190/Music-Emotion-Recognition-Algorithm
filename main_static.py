@@ -39,14 +39,14 @@ from mer.model import Simple_CRNN_3, SimpleDenseModel, \
   Simple_CRNN_3
 
 # Set the seed value for experiment reproducibility.
-# seed = 42
-# tf.random.set_seed(seed)
-# np.random.seed(seed)
+seed = 42
+tf.random.set_seed(seed)
+np.random.seed(seed)
 
 sd.default.samplerate = DEFAULT_FREQ
 
-ANNOTATION_SONG_LEVEL = "./dataset/DEAM/annotations/annotations averaged per song/song_level/"
-AUDIO_FOLDER = "./dataset/DEAM/wav"
+ANNOTATION_SONG_LEVEL = "./dataset/DEAM_Annotations/annotations/annotations averaged per song/song_level/"
+AUDIO_FOLDER = "./dataset/DEAM_audio/MEMD_audio"
 filenames = tf.io.gfile.glob(str(AUDIO_FOLDER) + '/*')
 
 # Process with average annotation per song. 

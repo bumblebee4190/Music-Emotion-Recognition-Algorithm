@@ -46,8 +46,8 @@ from mer.model import Simple_CRNN_3, SimpleDenseModel, \
 
 sd.default.samplerate = DEFAULT_FREQ
 
-ANNOTATION_SONG_LEVEL = "./dataset/DEAM/annotations/annotations averaged per song/dynamic (per second annotations)/"
-AUDIO_FOLDER = "./dataset/DEAM/wav"
+ANNOTATION_SONG_LEVEL = "./dataset/DEAM_Annotations/annotations/annotations averaged per song/dynamic (per second annotations)/"
+AUDIO_FOLDER = "./dataset/DEAM_audio/MEMD_audio"
 filenames = tf.io.gfile.glob(str(AUDIO_FOLDER) + '/*')
 
 BATCH_SIZE = 8
